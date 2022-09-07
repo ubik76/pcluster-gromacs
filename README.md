@@ -5,8 +5,17 @@ This repository contains the instructions to install and run Gromacs using [AWS 
 
 ## Instructions:
 * Install AWS ParallelCluster following the instructions [here](https://docs.aws.amazon.com/parallelcluster/latest/ug/install-v3-parallelcluster.html)
-* Deploy your cluster
-* Login to the cluster head node
+* Prepare the cluster configuration:
+   * edit the ```conf``` file with the data from your AWS account
+   * run the ```pcluster-config.sh``` script
+* Deploy your cluster:
+```
+pcluster create-cluster --cluster-name gromacs --cluster-configuration my-cluster-config.yaml
+```
+* Once the cluster is deployed, login to the cluster head node:
+```
+pcluster ssh --cluster-name test-cluster -i <path_to_your_ssh_key>
+```
 * Download and run the ```gromacs-install.sh``` script (it will download and install Gromacs using Spack)
 * Submit your job:
 ```
