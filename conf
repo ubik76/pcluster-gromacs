@@ -1,4 +1,4 @@
 # provide your specific configuration
-SSH_KEY_NAME=franz-Amazon-AWS
-SUBNET_ID=subnet-f6558992
-AWS_REGION=eu-west-1
+SSH_KEY_NAME=
+SUBNET_ID=
+AWS_REGION=
