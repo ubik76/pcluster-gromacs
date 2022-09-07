@@ -16,7 +16,10 @@ pcluster create-cluster --cluster-name gromacs --cluster-configuration my-cluste
 ```
 pcluster ssh --cluster-name gromacs -i <path_to_your_ssh_key>
 ```
-* Download and run the ```gromacs-install.sh``` script (it will download and install Gromacs using Spack)
+* Download and run the ```gromacs-install.sh``` script (it will download and install Gromacs using Spack):
+```
+wget https://raw.githubusercontent.com/ubik76/pcluster-gromacs/main/gromacs-install.sh
+```
 * Submit your job:
 ```
 sbatch /shared/input/gromacs/submit.sh
