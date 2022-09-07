@@ -1,0 +1,4 @@
+# provide your specific configuration
+SSH_KEY_NAME=
+SUBNET_ID=
+AWS_REGION=

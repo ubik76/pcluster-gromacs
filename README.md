@@ -14,7 +14,7 @@ pcluster create-cluster --cluster-name gromacs --cluster-configuration my-cluste
 ```
 * Once the cluster is deployed, login to the cluster head node:
 ```
-pcluster ssh --cluster-name test-cluster -i <path_to_your_ssh_key>
+pcluster ssh --cluster-name gromacs -i <path_to_your_ssh_key>
 ```
 * Download and run the ```gromacs-install.sh``` script (it will download and install Gromacs using Spack)
 * Submit your job:
